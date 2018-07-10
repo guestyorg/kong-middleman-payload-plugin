@@ -1,5 +1,7 @@
 local BasePlugin = require "kong.plugins.base_plugin"
 local access = require "kong.plugins.middleman.access"
+local ngx_log = ngx.log
+local ngx_log_DBG = ngx.DEBUG
 
 local MiddlemanHandler = BasePlugin:extend()
 
